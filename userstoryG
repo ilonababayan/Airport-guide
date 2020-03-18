@@ -1,0 +1,51 @@
+v = 10 #1000meter/minut
+Gate_A = 200 #meter
+Gate_B = 500
+Gate_C = 1500
+
+targetGate = input("Please insert the name of your target Gate")
+currentGate = input("Please insert the name of the closest Gate to you")
+
+currentGateMeters = 0
+
+if (currentGate == "A"):
+    currentGateMeters = Gate_A
+   
+else:  
+    if (currentGate == "B"):
+        currentGateMeters = Gate_B
+    else:
+        if (currentGate == "C"):
+            currentGateMeters = Gate_C
+        else:
+            if(currentGate == ""):
+                currentGate = "No current location"
+               
+
+if (targetGate == "A"):
+    targetGate = Gate_A
+else:
+    if (targetGate == "B"):
+        targetGate = Gate_B
+    else:
+        if (targetGate == "C"):
+            targetGate = Gate_C
+           
+distance = abs(currentGateMeters - targetGate)
+  print('You have to go ', distance , 'meter' )
+time = distance / v
+  print('You will spend ', time ,'minute')
+  
+  timewehave= input("Please input the time you have")
+
+ if (timewehave== "time"):
+    print ("You have: "time" minutes")
+   
+ if (timewehave< time):
+    time-timewehave=extratime
+     print ("Hurry, you will be late by: "extratime" minutes")
+
+
+ 
+  
+
