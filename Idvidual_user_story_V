@@ -1,0 +1,27 @@
+User story: a person has 2hours and 30 minutes to get from Gate_C to Gate_B, stay there for 10 minutes and go to the Gate_A.
+dual_user_
+v = 10 #1000meter/minut
+Gate_A = 200 #meter
+Gate_B = 500
+Gate_C = 1500
+
+targetGate = input("Please insert the name of your target Gate")
+currentGate = input("Please insert the name of the closest Gate to you")
+
+currentGateMeters = 0
+
+
+        if (currentGate == "C"):
+            currentGateMeters = Gate_C
+        
+
+if (targetGate == "A"):
+    targetGate = Gate_A
+else:
+    if (targetGate == "B"):
+        targetGate = Gate_B
+           
+distance = abs(currentGateMeters - targetGate)
+print('You have to go ', distance , 'meter' )
+time = distance / v +10
+print('You will spend ', time ,'minute')
