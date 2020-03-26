@@ -1,5 +1,7 @@
 #This is the code which creates the Json file 
  import json
+ with open('user_story.json', 'w') as json_file:
+    json.dump(my_dict, json_file)
 my_dict = {
     'Gate_A' : Gate_A,
     'Gate_B' : Gate_B,
