@@ -1,0 +1,10 @@
+import json
+my_dict = {
+    'Gate_A' : Gate_A,
+    'Gate_B' : Gate_B,
+    'Gate_C' : Gate_C,
+    'targetGate' : targetGate,
+    'currentGate' : currentGate}
+
+
+{"Gate_A": 200, "Gate_B": 500, "Gate_C": 1500, "targetGate": 200, "currentGate": "C"}
