@@ -1,0 +1,14 @@
+#This is the code which creates the Json file 
+ import json
+ with open('user_story.json', 'w') as json_file:
+   json.dump(my_dict, json_file)
+my_dict = {
+    'Gate_A' : Gate_A,
+    'Gate_B' : Gate_B,
+    'Gate_C' : Gate_C,
+    'targetlocation' : targetlocation,
+    'currentlocation' : currentlocation,
+    'middlelocation' : middlelocation,
+    'Duty_Free' : Duty_Free}
+
+{"Gate_A": 200, "Gate_B": 500, "Gate_C": 1500, "Duty_Free": 1000, "targetlocation": 1500, "currentlocation": "B", "middlelocation": 200} 
