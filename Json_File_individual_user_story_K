@@ -1,0 +1,12 @@
+#This is the code which creates the Json file 
+ import json
+my_dict = {
+    'Gate_A' : Gate_A,
+    'Gate_B' : Gate_B,
+    'Gate_C' : Gate_C,
+    'targetGate' : targetGate,
+    'currentGate' : currentGate,
+    'to_toilet' : to_toilet,
+    'to_duty_free' : to_duty_free}
+    
+{"Gate_A": 200, "Gate_B": 500, "Gate_C": 1500, "targetGate": 200, "currentGate": "B", "to_toilet": 50, "to_duty_free": 100}
