@@ -1,6 +1,6 @@
-This is the code which creates the Json file 
- import json
- with open('user_story.json', 'w') as json_file:
+#This is the code which creates the Json file 
+importjson
+with open('user_story.json', 'w') as json_file:
     json.dump(my_dict, json_file)
 my_dict = {
     'Gate_A' : Gate_A,
@@ -10,4 +10,4 @@ my_dict = {
     'currentGate' : currentGate}
     
 {"Gate_A": 200, "Gate_B": 500, "Gate_C": 1500, "targetGate": 200,
-“currentGate”:”C”}
+"currentGate” : "C"}.
