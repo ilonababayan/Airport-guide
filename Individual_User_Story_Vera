@@ -7,12 +7,16 @@ Gate_C = 1500
 
 userTime = int(input("How much time do you have? (in minutes)"))
 waitTime = int(input("How many minutes will you spend in Gate B? (in minutes)"))
-
-currentGateMeters = abs(GateC - GateB - Gate_A) 
+targetGate = str(input("Please insert your target gate"))
+if (targetGate == "A"):
+    targetGate = Gate_A
+else:
+    if (targetGate == "B"):
+        targetGate = Gate_B
 
 userTime = userTime - waitTime
            
-distance = abs(currentGateMeters - targetGate)
-print('You have to go ', distance , 'meter' )
-time = distance / v
+currentGateMeters = abs(Gate_C - Gate_B - Gate_A)
+print('You have to go ', currentGateMeters, 'meter' )
+time = currentGateMeters / v
 print('You will spend ', time ,'minute')
