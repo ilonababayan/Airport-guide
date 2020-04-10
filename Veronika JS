@@ -1,0 +1,27 @@
+function calculategrade(){
+
+  var homework = 0
+  var quiz = 0
+  var project1 = 0
+  var project2 = 0
+  
+
+  var homework_percent = perseInt(document.getElementById("homeworkpercent").innerHTML)
+
+  var homework_grade = parseFloat(document.getElementById("hwgrade").value)
+
+  var quiz_percent = perseInt(document.getElementById("quizpercent").innerHTML)
+
+  var quiz_grade = parseFloat(document.getElementById("quizgrad").value)
+
+  var project1_percent = perseInt(document.getElementById("project1percent").innerHTML)
+
+  var project1_grade = parseFloat(document.getElementById("P1grade").value)
+
+  var project2_percent = perseInt(document.getElementById("project2percent").innerHTML)
+
+  var project2_grade = parseFloat(document.getElementById("P2grade").value)
+
+  var calculategrade = hw_grade + quiz_grade + project1_grade + project2_gradeconsole.log(calculategrade)
+
+  document.getElementById("currentgradebutton").innerHTML = calculategrade
