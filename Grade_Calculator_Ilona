@@ -1,0 +1,123 @@
+HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1 id="header"> Student</h1>
+
+    <div id="studentinfo">
+      <br>Ilona Babayan</br>
+      <br>ID:A01234567</br>
+    </div>
+
+    <table id="studentGrades">
+      <tr>
+        <th>Methods of evaluation</th>
+        <th>Percantage</th>
+        <th>Grade</th>
+      </tr> 
+      <tr>
+        <td>Homework</td>
+        <td>Homework percent <span id="homeworkpercent">10</span>%</td>
+        <td><input type="text" id="hwGrade"></td>
+      </tr>
+      <tr>
+        <td>Quiz</td>
+        <td>Quiz percent <span id="quizpercent">20</span>%</td>
+        <td><input type="text" id="quizGrade"></td>
+      </tr>
+      <tr>
+        <td>Project 1</td>
+        <td>Project1 percent <span id="project1percent">30</span>%</td>
+        <td><input type="text" id="P1Grade"></td>
+      </tr>
+      <tr>
+        <td>Project 2</td>
+        <td>Project2 percent <span id="project2percent">30</span>%</td>
+        <td><input type="text" id="P2Grade"></td>
+      </tr>
+    </table>
+    <div>
+      <button onclick="calculategrade()" id=currentgradebutton>Calculate Current Grade</button>
+    </div>
+    <div id="currentgrade">
+      <label>Current grade: </label>
+      <span>98.5</span>
+    </div>
+
+  </body>
+
+</html>
+
+CSS
+#header {
+  background-color:rgb(222, 165, 164);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  margin: 0px;
+  }
+
+#studentinfo {
+ background-color: rgb(242, 220, 221);
+ color: black;
+ padding: 10px;
+ margin: 0px;
+ text-align: center;
+ }
+
+#studentGrades {
+ background-color: rgb(207, 167, 176);
+ margin: 0px;
+ width: 100%;
+ }
+
+#currentgrade {
+  background-color: rgb(240, 216, 221);
+  font-size: 120%;
+  margin: 0px;
+  padding: 30px;
+}
+
+#currentgrade label {
+  font-weight: bold;
+}
+
+#currentgrade span {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+JS
+function calculateGrade() {
+  var Homework = 0
+  var Quiz = 0
+  var Project1 = 0
+  var Project2 = 0
+
+  var hwpercent = perseInt(document.getElementById("homeworkpercent").innerHTML)
+
+  var homework_grade = parseFloat(document.getElementById("hwGrade").value)
+
+  var q_percent = perseInt(document.getElementById("quizpercent").innerHTML)
+
+  var q_grade = parseFloat(document.getElementById("quizGrade").value)
+
+  var p1_percent = perseInt(document.getElementById("project1percent").innerHTML)
+
+  var p1_grade = parseFloat(document.getElementById("P1Grade").value)
+
+  var p2_percent = perseInt(document.getElementById("project2percent").innerHTML)
+
+  var p2_grade = parseFloat(document.getElementById("P2Grade").value)
+
+  var calculategrade = homework_grade + q_grade + p1_grade + p2_grade console.log(calculategrade)
+
+  document.getElementById("currentgradebutton").innerHTML = calculategrade
+}
