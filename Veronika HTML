@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <h1 id="header"> Student</h1>
+
+    <div id="studentinformation">
+      <br>Veronika Mezhlumyan</br>
+      <br>ID:A091487567</br>
+    </div>
+
+    <table id="studentgrade">
+      <tr>
+        <th>Methods of evaluation</th>
+        <th>Percantage</th>
+        <th>Grade</th>
+      </tr> 
+      <tr>
+        <td>Homework</td>
+        <td><span id="homeworkpercent">10</span>%</td>
+        <td><input type="text" id="hwgrade"></td>
+      </tr>
+      <tr>
+        <td>Quiz</td>
+        <td><span id="quizpercent">10</span>%</td>
+        <td><input type="text" id="quizgrade"></td>
+      </tr>
+      <tr>
+        <td>Project 1</td>
+        <td><span id="project1percent">35</span>%</td>
+        <td><input type="text" id="P1grade"></td>
+      </tr>
+      <tr>
+        <td>Project 2</td>
+        <td><span id="project2percent">35</span>%</td>
+        <td><input type="text" id="P2grade"></td>
+      </tr>
+    </table>
+    <div>
+      <button onclick="calculategrade()" id=currentgradebutton>Calculate Current Grade</button>
+    </div>
+    <div id="currentgrade">
+      <label>Current grade: </label>
+      <span>94</span>
+    </div>
+
+  </body>
+
+</html>
