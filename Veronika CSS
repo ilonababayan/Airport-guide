@@ -1,0 +1,39 @@
+#header {
+  background-color:#D9A88F;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  margin: 0px;
+  }
+
+#studentinformation {
+ background-color: #FAC39D;
+ color: black;
+ padding: 10px;
+ margin: 0px;
+ text-align: center;
+ }
+
+#studentgrade {
+ background-color: #FFCBA4;
+ margin: 0px;
+ width: 100%;
+ }
+
+#currentgrade {
+  background-color: #FFE5B4;
+  font-size: 120%;
+  margin: 0px;
+  padding: 30px;
+}
+
+#currentgrade label {
+  background-color: #FFE5B4;
+  font-weight: bold;
+}
+
+#currentgrade span {
+  background-color: #FFE5B4;
+  font-weight: bolder;
+  font-style: italic;
+}
