@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>airport.guide</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <h1 id="header"> Airport Guide</h1>
+    <h3>Current Gate</h3>
+    <form action="/action_page.php">
+  <input list="locations" name="location">
+  <datalist id="locations">
+    <option value="Gate A">
+    <option value="Gate B">
+    <option value="Gate C">
+    <option value="Duty free">
+  </datalist>
+</form>
+
+<h3>Middle Point</h3>
+<form action="/action_page.php">
+  <input list="locations" name="location">
+  <datalist id="locations">
+    <option value="Gate A">
+    <option value="Gate B">
+    <option value="Gate C">
+    <option value="Duty free">
+  </datalist>
+</form>
+
+<h3>Target Gate</h3>
+<form action="/action_page.php">
+  <input list="locations" name="location">
+  <datalist id="locations">
+    <option value="Gate A">
+    <option value="Gate B">
+    <option value="Gate C">
+    <option value="Duty free">
+  </datalist>
+  
+</form>
+
+<h3>Available Time (in minutes)</h3>
+ <form action="/action_page.php">
+ <input type="text" id="availabletime">
+</form>
+
+<br><button onclick="calculatime()" id=currentgatebutton>Calculate Time</button></br>
+    <div id="time">
+      <label>Time Left </label>
+      <span id="tleft"></span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
