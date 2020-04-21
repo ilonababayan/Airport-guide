@@ -1,5 +1,5 @@
 body {
- background: black
+ background: #242424;
 }
  
 #header {
@@ -15,7 +15,7 @@ body {
 
 #middle {
   line-height: 2;
-   margin: 1px;
+  margin: 1px;
   font-weight: bold;
   color: #fff;
   background-color:   #ffd9b0; 
@@ -24,8 +24,8 @@ body {
 }
 
 #text {
-    line-height: 2;
-   margin: 1px;
+  line-height: 2;
+  margin: 1px;
   font-weight: bold;
   color: #fff;
   background-color:  #ffd9b0; 
@@ -41,8 +41,17 @@ body {
   font-size: 17px;
   
 }
+
+#currentgatebutton {
+  line-height: 3;
+  background-color:  #ffd9b0;
+  color: black;
+  -webkit-border-radius: 10px;
+}
+
 #time {
   color: #fff;
   font-weight: bold;
 
 }
+ 
