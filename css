@@ -1,52 +1,68 @@
 body {
- background: #242424;
+ background: #ffd9b0;
 }
  
+
 #header {
   line-height: 2;
-  margin: 0;
-  text-align: center;
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+#header p {
+  margin: 5%;
   font-weight: bold;
-  color: #fff;
-  background-color:  #ffd9b0; 
-  font-size: 40px;
-  -webkit-border-radius: 7px;
+  color: #000000;
 }
 
 #middle {
   line-height: 2;
-  margin: 1px;
+  margin: 0.5px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
   font-weight: bold;
-  color: #fff;
-  background-color:   #ffd9b0; 
   font-size: 23px;
-  -webkit-border-radius: 10px;
+}
+
+#middle p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }
 
 #text {
   line-height: 2;
-  margin: 1px;
+  margin: 0.5px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
   font-weight: bold;
-  color: #fff;
-  background-color:  #ffd9b0; 
   font-size: 23px;
-  -webkit-border-radius: 10px;
+}
+
+#text p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }
 #availabletime {
   line-height: 2;
    margin: 1px;
   font-weight: bold;
-  color: black
-  background-color:  #ffd9b0; 
   font-size: 17px;
-  
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
 }
 
 #currentgatebutton {
   line-height: 3;
-  background-color:  #ffd9b0;
-  color: black;
-  -webkit-border-radius: 10px;
+  background-color:  #fff;
+  color: #242424;
+  -webkit-border-radius: 100px;
 }
 
 #time {
