@@ -9,18 +9,18 @@
   <body>
     <script src="script.js"></script>
     <h1 id="header"> Airport Guide</h1>
-    <h3>Current Gate</h3>
+    <h3 id="middle">Current Gate</h3>
     <form action="/action_page.php">
   <input list="locations" name="location">
   <datalist id="locations">
-    <option value="Gate A">
+    <option value="Gate A" id="gateA">
     <option value="Gate B">
     <option value="Gate C">
     <option value="Duty free">
   </datalist>
 </form>
 
-<h3>Middle Point</h3>
+<h3 id="middle">Middle Point</h3>
 <form action="/action_page.php">
   <input list="locations" name="location">
   <datalist id="locations">
@@ -31,7 +31,7 @@
   </datalist>
 </form>
 
-<h3>Target Gate</h3>
+<h3 id="text">Target Gate</h3>
 <form action="/action_page.php">
   <input list="locations" name="location">
   <datalist id="locations">
@@ -43,7 +43,7 @@
   
 </form>
 
-<h3>Available Time (in minutes)</h3>
+<h3 id="text">Available Time (in minutes)</h3>
  <form action="/action_page.php">
  <input type="text" id="availabletime">
 </form>
