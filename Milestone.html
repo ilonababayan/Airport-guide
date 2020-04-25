@@ -7,51 +7,74 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="script.js"></script>
-    <h1 id="header"> Airport Guide</h1>
-    <h3 id="middle">Current Gate</h3>
-    <form action="/action_page.php">
-  <input list="locations" name="location">
-  <datalist id="locations">
-    <option value="Gate A" id="gateA">
-    <option value="Gate B">
-    <option value="Gate C">
-    <option value="Duty free">
-  </datalist>
-</form>
+    <div id = "pages">
+      <div id="page1">
+        <h1 id="header"> Airport Guide</h1>
+        <h4 id="slogan">Travel smart, travel well.</h4>
+      </div>
+    
+      <div id="page2">
+        <h3 id="middle">Current Gate</h3>
+        <select id="locations">
+          <option selected></option>
+          <option id="gateA">Gate A</option>
+          <option id="gateB">Gate B</option>
+          <option id="gateC">Gate C</option>
+          <option id="dutyfree">Duty Free</option>
+        </select>
 
-<h3 id="middle">Middle Point</h3>
-<form action="/action_page.php">
-  <input list="locations" name="location">
-  <datalist id="locations">
-    <option value="Gate A">
-    <option value="Gate B">
-    <option value="Gate C">
-    <option value="Duty free">
-  </datalist>
-</form>
+        <h3 id="middle">Middle Point</h3>
+        <select id="locations">
+          <option selected></option>
+          <option id="gateA">Gate A</option>
+          <option id="gateB">Gate B</option>
+          <option id="gateC">Gate C</option>
+          <option id="dutyfree">Duty Free</option>
+        </select>
 
-<h3 id="text">Target Gate</h3>
-<form action="/action_page.php">
-  <input list="locations" name="location">
-  <datalist id="locations">
-    <option value="Gate A">
-    <option value="Gate B">
-    <option value="Gate C">
-    <option value="Duty free">
-  </datalist>
-  
-</form>
+        <h3 id="middle">Target Gate</h3>
+        <select id="locations">
+          <option selected></option>
+          <option id="gateA">Gate A</option>
+          <option id="gateB">Gate B</option>
+          <option id="gateC">Gate C</option>
+          <option id="dutyfree">Duty Free</option>
+        </select>
 
-<h3 id="text">Available Time (in minutes)</h3>
- <form action="/action_page.php">
- <input type="text" id="availabletime">
-</form>
-
-<br><button onclick="calculatime()" id=currentgatebutton>Calculate Time</button></br>
-    <div id="time">
-      <label>Time Left </label>
-      <span id="tleft"></span>
+        <h3 id="text">Available Time (in minutes)</h3>  <input type="text" id="availabletime">
+        </br>
+        <button onclick="calculatime()" id="currentgatebutton">Calculate Time</button>
+        </br>
+        <div id="time">
+          <label>Time Left </label>
+          <span id="tleft"></span>
+        </div>
+      </div>
+        <div id="page3">
+        <h1 id="header"> Parking </h1>
+        <h3 id="availablet">How much time do you plan to park</h3>
+        <select id="availabletime">
+          <option selected></option>
+          <option id="less_than_15_minutes">Less than 15 minutes</option>
+          <option id="1hour">1 hour</option>
+          <option id="2hours">2 hours</option>
+          <option id="3hours">3 hours</option>
+          <option id="more_than_3_hours">More than 3 hours</option>
+        </select>
+        <button onclick="showfloors()" id="currentfloorbutton">OK</button>
+        <div id="floors">
+          <label>Available floor </label>
+          <span id="avfloors"></span>
+        </div>
+      </div>
+    </div>
+    <div id = "navigation">
+      <button id="p1"
+    onclick="gotopage1()">&lt;&lt; P1 </button>
+      <button id="p2"
+    onclick="gotopage2()">P2 &gt;&gt;</button>
+      <button id="p2" 
+    onclick="gotopage3()">P3 &gt;&gt;</button>
     </div>
     <script src="script.js"></script>
   </body>
